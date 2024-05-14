@@ -1,5 +1,6 @@
 # 红米10X5G设备树
 
+# 设备信息
 The Redmi 10X 5G (codenamed _"atom"_) is a medium level smartphone from Xiaomi.
 
 It was announced on May 26, 2020. Release date was June 2020.
