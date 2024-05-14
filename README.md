@@ -19,4 +19,4 @@ Display | 1080 x 2400 pixels, 20:9 ratio, 6.57 inches, AMOLED, 60Hz, HDR10+, 400
 Camera  | 48MP(wide) 8MP(ultrawide) 2MP(telephoto macro) 2MP(depth)
 ## Device picture
 
-![Redmi 10X 5G ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-10x-5g-1.jpg "Redmi 10X 5G")
+![Redmi 10X 5G ](https://github.com/AtomAndroid/android_device_redmi_atom/blob/device/files/atom.jpg "Redmi 10X 5G")
