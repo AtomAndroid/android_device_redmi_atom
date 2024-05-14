@@ -1,0 +1,2 @@
+# android_device_redmi_atom
+红米10X5G的设备树
