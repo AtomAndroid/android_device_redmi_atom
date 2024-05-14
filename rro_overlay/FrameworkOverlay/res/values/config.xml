@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Frome MIUI /product/overlay/DevicesAndroidOverlay-->
+    <dimen name="status_bar_height_portrait">90px</dimen>
+    <bool name="config_dozePulsePickup">false</bool>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <fraction name="config_maximumScreenDimRatio">29.999996%</fraction>
+    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -60 V 90 H 60 V 0 H 0 Z</string>
+    <!-- Important to overlay vendor package-->
+    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+    <integer name="config_screenBrightnessDim">2</integer>
+    <integer name="config_screenBrightnessDoze">17</integer>
+    <integer name="config_brightness_ramp_rate_fast">180</integer>
+    <integer name="config_brightness_ramp_rate_slow">60</integer>
+    <integer name="config_screenBrightnessForVrSettingDefault">86</integer>
+    <integer name="config_screenBrightnessForVrSettingMinimum">79</integer>
+    <integer name="config_screenBrightnessForVrSettingMaximum">255</integer>
+    <integer name="config_screenBrightnessSettingDefault">102</integer>
+    <integer-array name="config_autoBrightnessLcdBacklightValues" />
+    <string-array name="config_tether_bluetooth_regexs">
+        <item>bt-pan</item>
+        <item>bt-dun</item>
+    </string-array>
+    <string-array name="config_tether_wifi_regexs">
+        <item>ap\\d</item>
+    </string-array>
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+         config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+         brightness of an all-white image.
+         If this is defined then:
+            - config_autoBrightnessLcdBacklightValues should not be defined
+            - config_screenBrightnessNits must be defined
+            - config_screenBrightnessBacklight must be defined
+         This array should have size one greater than the size of the config_autoBrightnessLevels
+         array. The brightness values must be non-negative and non-decreasing. This must be
+         overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>4</item>
+        <item>5</item>
+        <item>9</item>
+        <item>16</item>
+        <item>24</item>
+        <item>31</item>
+        <item>35</item>
+        <item>48</item>
+        <item>61</item>
+        <item>83</item>
+        <item>87</item>
+        <item>87</item>
+        <item>88</item>
+        <item>88</item>
+        <item>88</item>
+        <item>89</item>
+        <item>89</item>
+        <item>89</item>
+        <item>90</item>
+        <item>90</item>
+        <item>91</item>
+        <item>91</item>
+        <item>91</item>
+        <item>92</item>
+        <item>92</item>
+        <item>93</item>
+        <item>95</item>
+        <item>96</item>
+        <item>98</item>
+        <item>98</item>
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>104</item>
+        <item>105</item>
+        <item>107</item>
+        <item>108</item>
+        <item>110</item>
+        <item>111</item>
+        <item>113</item>
+        <item>114</item>
+        <item>116</item>
+        <item>117</item>
+        <item>119</item>
+        <item>120</item>
+        <item>142</item>
+        <item>164</item>
+        <item>190</item>
+        <item>216</item>
+        <item>243</item>
+        <item>272</item>
+        <item>302</item>
+        <item>313</item>
+        <item>386</item>
+        <item>430</item>
+        <item>434</item>
+        <item>445</item>
+        <item>445</item>
+    </integer-array>
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+        values in the config_screenBrightnessNits array.
+        This array should be equal in size to config_screenBrightnessBacklight. -->
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>255</item>
+    </integer-array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+            values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+            should be measured with an all white image while the display is in the fully on state.
+            Note that this value should *not* reflect the maximum brightness value for any high
+            brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+            This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+        <item>2.0</item>
+        <item>450.0</item>
+    </array>
+</resources>
